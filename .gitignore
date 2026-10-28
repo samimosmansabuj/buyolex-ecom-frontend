@@ -1,0 +1,50 @@
+# =========================
+# ENV FILES (if used)
+# =========================
+.env
+.env.*
+*.env
+
+# =========================
+# NODE (only if accidentally used)
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+
+# =========================
+# OS FILES
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDE / EDITORS
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# LOGS / TEMP FILES
+# =========================
+*.log
+logs/
+tmp/
+temp/
+
+# =========================
+# BACKUP FILES
+# =========================
+*.bak
+*.backup
+
+# =========================
+# OPTIONAL: LOCAL CONFIG FILES
+# =========================
+config.local.js
+env.js

@@ -1,0 +1,10 @@
+.panel .order-item:first-of-type{margin-top:6px}
+.order-header{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;margin:6px 0 20px;flex-wrap:wrap}
+.order-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:20px;align-items:start;margin-bottom:30px}
+.order-left{display:grid;gap:16px}
+.order-left .panel p{font-size:14px;margin:6px 0;line-height:1.5}
+.order-left .panel h2,.order-grid .sum h2{font-size:20px;margin-bottom:12px}
+.order-left .order-item{padding:8px 0;border-top:1px solid var(--edge)}
+.order-left .order-item:first-of-type{border-top:0}
+
+

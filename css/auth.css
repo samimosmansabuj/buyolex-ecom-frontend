@@ -1,0 +1,15 @@
+.auth-box{max-width:430px;margin:40px auto;padding:30px}
+.auth-head{display:grid;gap:6px;margin-bottom:22px}
+.auth-form{display:grid;gap:12px}
+.auth-form input{border-radius:14px;border:1px solid var(--edge);background:var(--glass);padding:14px 16px;width:100%}
+.auth-label{font-size:13px;color:var(--mute)}
+.pw-wrap{position:relative}.pw-wrap input{padding-right:70px}
+.pw-toggle{position:absolute;right:8px;top:50%;translate:0 -50%;font-size:13px;color:var(--mute);padding:6px 10px;border-radius:99px}
+.link-btn{font-size:13px;color:var(--mute);text-decoration:underline;padding:6px;text-align:center}.link-btn:disabled{opacity:.5;text-decoration:none}
+
+.google-auth{margin-top:22px}
+.google-auth-divider{display:flex;align-items:center;gap:12px;color:var(--mute);font-size:13px;margin-bottom:18px}
+.google-auth-divider::before,.google-auth-divider::after{content:"";flex:1;height:1px;background:var(--edge)}
+.google-auth-btn{display:flex;justify-content:center;width:100%;min-height:44px}
+
+

@@ -1,0 +1,10 @@
+.addr-layout{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:20px;align-items:start;margin-bottom:30px}
+.addr-form{position:sticky;top:90px}
+.addr-card{margin-bottom:12px;padding:18px 22px;border-radius:24px}
+.addr-top{display:flex;justify-content:space-between;gap:10px;margin-bottom:6px}
+.addr-card p{font-size:14px;line-height:1.5}
+.addr-actions{display:flex;gap:8px;margin-top:12px}
+.addr-actions .ghost{padding:8px 16px;font-size:13px}
+.ghost.danger{color:#ff8a8a}
+
+

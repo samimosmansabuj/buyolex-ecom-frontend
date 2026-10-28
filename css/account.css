@@ -1,0 +1,12 @@
+.account-links{display:flex;gap:8px;flex-wrap:wrap;padding:28px 0 18px}
+.account-links a,.account-links button{padding:9px 16px;border-radius:99px;font-size:14px;color:var(--mute);text-decoration:none;border:1px solid var(--edge);background:var(--glass)}
+.account-links a:hover,.account-links button:hover{color:var(--ink)}
+.account-links a.on{color:var(--ink);background:linear-gradient(135deg,color-mix(in srgb,var(--a) 50%,transparent),color-mix(in srgb,var(--b) 40%,transparent));border-color:var(--ink)}
+.card-narrow{max-width:640px;margin-bottom:30px}
+.card-narrow input[readonly]{opacity:.7}
+@media (max-width:860px){
+.addr-layout{grid-template-columns:minmax(0,1fr)}
+.addr-form{position:static}
+}
+
+

@@ -1,0 +1,50 @@
+.grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.card{border-radius:20px;padding:8px;display:flex;flex-direction:column;text-decoration:none;color:inherit;position:relative;transition:transform .3s}.card:hover{transform:translateY(-5px)}
+.img{aspect-ratio:1;border-radius:14px;display:grid;place-items:center;font-size:44px;position:relative;overflow:hidden}.img img{width:100%;height:100%;object-fit:cover;display:block}
+.card .badge{position:absolute;z-index:1;top:12px;left:12px;font-size:10px;padding:3px 8px;border-radius:99px;background:#fff;color:#111;font-weight:600}
+.heart{position:absolute;top:12px;right:12px;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-size:13px;z-index:2}
+.card h3{font-size:13px;line-height:1.3;margin:8px 3px 2px;overflow-wrap:anywhere;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;min-height:2.6em}.card .meta{font-size:11px;color:var(--mute);margin:0 3px 4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card .pr{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;margin:auto 3px 2px}.pr b{font-size:14px}.pr s{font-size:11px;color:var(--mute);margin-left:5px}
+.pr button{width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#17b3a3,#0a736d);color:#fff;font-size:16px}
+
+.shop{display:grid;grid-template-columns:230px minmax(0,1fr);gap:20px;padding:34px 0}
+.side{border-radius:26px;padding:20px;align-self:start;position:sticky;top:90px}
+.side h4{font-size:13px;color:var(--mute);margin:16px 0 8px;font-weight:500}.side h4:first-child{margin-top:0}
+.chip{display:block;width:100%;text-align:left;padding:9px 12px;border-radius:12px;font-size:14px}.chip.on{background:linear-gradient(135deg,color-mix(in srgb,var(--a) 50%,transparent),color-mix(in srgb,var(--b) 40%,transparent))}
+.side input[type=range]{width:100%;accent-color:var(--b)}
+.tools{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;gap:10px;flex-wrap:wrap}
+select{border-radius:99px;border:1px solid var(--edge);background:var(--glass);padding:9px 14px}select option{color:#111}
+.shop .grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+
+.pager{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:26px 0}
+.pager button.pg{cursor:pointer;color:inherit}.pager button.pg:disabled{opacity:.4;cursor:default}
+.pg{min-width:38px;height:38px;padding:0 12px;border-radius:99px;display:grid;place-items:center;font-size:14px;color:inherit;text-decoration:none;border:1px solid var(--edge);background:var(--glass)}
+.pg.on{background:linear-gradient(135deg,color-mix(in srgb,var(--a) 50%,transparent),color-mix(in srgb,var(--b) 40%,transparent));border-color:var(--ink)}
+
+.filter-bar{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:6px 14px;border-radius:16px;margin-bottom:10px}
+.filter-left{display:flex;gap:12px;flex-wrap:wrap}
+.filter-left label{display:flex;gap:6px;align-items:center;font-size:12px;color:var(--mute)}
+.pager button.pg{cursor:pointer;color:inherit}.pager button.pg:disabled{opacity:.4;cursor:default}
+.shop-title{font-size:clamp(22px,3vw,30px);letter-spacing:-.03em;margin:0 0 14px}
+.shop-top{margin-bottom:0}
+.shop{padding-top:18px}
+
+@media (max-width:992px){
+.grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.shop .grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:860px){
+.shop{grid-template-columns:minmax(0,1fr)}
+.shop .grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.side{position:static}
+}
+
+.img img{width:100%;height:100%;object-fit:cover;border-radius:inherit;display:block}
+.chip.sub{padding-left:26px;font-size:13px;color:var(--mute)}
+#shop-root>.filter-bar{margin-top:22px}
+@media (max-width:640px){.grid,.shop .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.card{padding:6px;border-radius:16px}.card h3{font-size:12px}.pr b{font-size:13px}}
+.filter-bar select{padding:4px 26px 4px 10px;font-size:12px;min-height:0;height:30px;border-radius:99px}
+.filter-bar .mute{font-size:12px;white-space:nowrap}
+@media (max-width:640px){.filter-bar{padding:6px 10px;gap:6px}.filter-left{gap:6px;flex:1;flex-wrap:nowrap}.filter-left label{flex:1;min-width:0;font-size:11px;gap:4px}.filter-left label select{min-width:0;width:100%;padding:3px 20px 3px 8px;font-size:11px}.filter-bar .mute{font-size:11px}}
+
+

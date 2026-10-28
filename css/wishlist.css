@@ -1,0 +1,9 @@
+.wish-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:30px 0 18px;flex-wrap:wrap}
+.wish-item{display:grid;gap:8px;align-content:start}
+.wish-actions{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px}
+.wish-actions .cta,.wish-actions .ghost{padding:10px 14px;font-size:13px;text-align:center}
+@media (max-width:520px){
+.wish-actions{grid-template-columns:minmax(0,1fr)}
+}
+
+
